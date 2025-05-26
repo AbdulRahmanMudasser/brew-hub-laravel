@@ -17,6 +17,7 @@ require_once 'includes/functions.php';
     <main>
         <?php include 'includes/about.php'; ?>
         <?php include 'includes/menu.php'; ?>
+        <?php include 'includes/gallery.php'; ?>
         <?php include 'includes/contact.php'; ?>
     </main>
     <?php include 'includes/footer.php'; ?>
