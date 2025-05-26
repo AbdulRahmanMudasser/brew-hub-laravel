@@ -1,12 +1,14 @@
-<div class="contact" id="location">
+<section class="contact">
     <h2>Contact Us</h2>
-    <p><strong>Address:</strong> 123 Coffee Lane, Brewtown</p>
-    <p><strong>Opening Hours:</strong><br>
-        Monday - Friday: 7:00 AM - 10:00 PM<br>
-        Saturday - Sunday: 8:00 AM - 11:00 PM
-    </p>
-    <h3>Reserve Your Experience</h3>
-    <form>
+    <div class="contact-details">
+        <p><strong>Address:</strong> 123 Coffee Lane, Brewtown</p>
+        <p><strong>Opening Hours:</strong><br>
+            Monday - Friday: 7:00 AM - 10:00 PM<br>
+            Saturday - Sunday: 10:00 AM - 8:00 PM
+        </p>
+    </div>
+    <h3>Reserve a Table</h3>
+    <form method="POST" action="process_reservation.php" class="reservation-form">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
         <label for="people">Number of Guests</label>
@@ -17,5 +19,7 @@
         <textarea id="feedback" name="feedback" rows="4"></textarea>
         <input type="submit" value="Book Your Table">
     </form>
-    <p class="map-placeholder">Visit us at 123 Coffee Lane, Brewtown [Interactive Map Placeholder]</p>
-</div>
+    <div class="map-placeholder">
+        <p>Visit us at 123 Coffee Lane, Brewtown<br>[Interactive Map Placeholder]</p>
+    </div>
+</section>
