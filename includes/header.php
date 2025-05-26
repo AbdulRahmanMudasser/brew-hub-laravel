@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['set_preferences'])) {
         if (preg_match('/^#[0-9A-Fa-f]{6}$|^[a-zA-Z]+$/', $favorite_color)) {
             setcookie('user_full_name', $full_name, time() + (30 * 24 * 60 * 60), '/');
             setcookie('favorite_color', $favorite_color, time() + (30 * 24 * 60 * 60), '/');
-            $_SESSION['message'] = "Preferences saved!";
+            $_SESSION['message'] = "Preferences Saved!";
             $_SESSION['message_type'] = 'success';
             $_SESSION['show_popup'] = true; // Trigger popup
         } else {
@@ -71,5 +71,5 @@ $favorite_color = $_COOKIE['favorite_color'] ?? '';
             Hello, <?php echo htmlspecialchars($full_name); ?>!
         </p>
     </div>
-    <?php unset($_SESSION['show_popup']); // Clear popup trigger ?>
+    <?php unset($_SESSION['show_popup']);  ?>
 <?php endif; ?>

@@ -4,15 +4,18 @@
     margin: 0;
     padding: 0;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.8;
     background: #f8f5f2;
     color: #3b2f2f;
 }
+
 img {
     max-width: 100%;
     height: auto;
@@ -20,30 +23,38 @@ img {
 }
 
 /* Typography */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Playfair Display', serif;
     color: #6f4e37;
     letter-spacing: 1px;
 }
+
 h1 {
     font-size: 3em;
     font-weight: 700;
 }
+
 h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
     text-align: center;
 }
+
 h3 {
     font-size: 1.8em;
     margin: 30px 0 20px;
     text-align: center;
 }
+
 h4 {
     font-size: 1.5em;
     font-weight: 600;
     margin-bottom: 10px;
 }
+
 p {
     margin-bottom: 20px;
     font-size: 1.1em;
@@ -70,9 +81,11 @@ main {
     margin: 0;
     padding: 0;
 }
+
 .hero h1 {
     color: #f8f5f2;
 }
+
 .hero .cta-button {
     background: #6f4e37;
     color: #fff;
@@ -82,6 +95,7 @@ main {
     font-family: 'Playfair Display', serif;
     transition: background 0.3s, transform 0.2s;
 }
+
 .hero .cta-button:hover {
     background: #d2691e;
     transform: translateY(-3px);
@@ -100,15 +114,18 @@ header {
     justify-content: space-between;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 header .logo {
     width: 60px;
     height: 60px;
 }
+
 .nav-menu ul {
     list-style: none;
     display: flex;
     gap: 25px;
 }
+
 .nav-menu a {
     color: #f8f5f2;
     text-decoration: none;
@@ -119,6 +136,7 @@ header .logo {
     border-radius: 4px;
     transition: background 0.3s, transform 0.2s;
 }
+
 .nav-menu a:hover,
 .nav-menu a.active {
     background: #d2691e;
@@ -137,6 +155,7 @@ header .logo {
     cursor: pointer;
     padding: 0;
 }
+
 .hamburger span {
     width: 100%;
     height: 3px;
@@ -144,12 +163,15 @@ header .logo {
     border-radius: 2px;
     transition: all 0.3s ease;
 }
+
 .hamburger.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
+
 .hamburger.active span:nth-child(2) {
     opacity: 0;
 }
+
 .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -7px);
 }
@@ -161,6 +183,7 @@ header .logo {
     padding: 0 40px;
     text-align: center;
 }
+
 .welcome {
     font-family: 'Playfair Display', serif;
     font-size: 1.2em;
@@ -170,6 +193,7 @@ header .logo {
     border-radius: 8px;
     display: inline-block;
 }
+
 .preferences-form {
     background: #fff;
     padding: 20px;
@@ -179,6 +203,7 @@ header .logo {
     max-width: 500px;
     width: 100%;
 }
+
 .preferences-form label {
     display: block;
     font-family: 'Playfair Display', serif;
@@ -186,6 +211,7 @@ header .logo {
     margin-bottom: 5px;
     font-size: 1.1em;
 }
+
 .preferences-form input[type="text"] {
     width: 100%;
     padding: 10px;
@@ -195,10 +221,12 @@ header .logo {
     font-size: 1em;
     transition: border-color 0.3s;
 }
+
 .preferences-form input[type="text"]:focus {
     border-color: #6f4e37;
     outline: none;
 }
+
 .preferences-form input[type="submit"] {
     background: #6f4e37;
     color: #fff;
@@ -210,6 +238,7 @@ header .logo {
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
 }
+
 .preferences-form input[type="submit"]:hover {
     background: #d2691e;
     transform: translateY(-2px);
@@ -234,11 +263,13 @@ header .logo {
     z-index: 1000;
     padding: 20px;
 }
+
 .preference-popup p {
     font-family: 'Playfair Display', serif;
     font-size: 1.4em;
     margin: 0;
 }
+
 .popup-close {
     position: absolute;
     top: 10px;
@@ -257,6 +288,7 @@ header .logo {
     justify-content: center;
     transition: background 0.3s;
 }
+
 .popup-close:hover {
     background: #d2691e;
     color: #f8f5f2;
@@ -266,12 +298,14 @@ header .logo {
 .about {
     padding: 40px 0;
 }
+
 .about-grid {
     display: flex;
     flex-direction: row;
     gap: 30px;
     flex-wrap: nowrap;
 }
+
 .about-card {
     display: flex;
     background: #fff;
@@ -282,27 +316,33 @@ header .logo {
     flex: 1;
     max-width: calc(50% - 15px);
 }
+
 .about-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
+
 .about-image {
     width: 300px;
     height: 200px;
     object-fit: cover;
     border-radius: 12px 0 0 12px;
 }
+
 .about-content {
     padding: 20px;
     flex: 1;
 }
+
 .about-content h3 {
     color: #6f4e37;
     transition: color 0.3s;
 }
+
 .about-card:hover .about-content h3 {
     color: #d2691e;
 }
+
 .about-content p {
     font-size: 1em;
     color: #3b2f2f;
@@ -313,11 +353,13 @@ header .logo {
 .menu {
     padding: 40px 0;
 }
+
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
+
 .menu-item {
     background: #fff;
     border-radius: 16px;
@@ -329,10 +371,12 @@ header .logo {
     align-items: center;
     padding: 20px;
 }
+
 .menu-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
+
 .menu-image {
     width: 100%;
     height: 220px;
@@ -340,6 +384,7 @@ header .logo {
     border-radius: 12px;
     margin-bottom: 15px;
 }
+
 .menu-image-placeholder {
     width: 100%;
     height: 220px;
@@ -354,25 +399,30 @@ header .logo {
     font-size: 1.1em;
     text-align: center;
 }
+
 .menu-content {
     text-align: center;
     width: 100%;
 }
+
 .menu-content h4 {
     color: #6f4e37;
     font-size: 1.6em;
     margin-bottom: 10px;
     transition: color 0.3s;
 }
+
 .menu-item:hover .menu-content h4 {
     color: #d2691e;
 }
+
 .description {
     font-size: 1em;
     color: #3b2f2f;
     line-height: 1.6;
     margin-bottom: 12px;
 }
+
 .price {
     font-size: 1.3em;
     font-weight: bold;
@@ -385,6 +435,7 @@ header .logo {
     padding: 40px 0;
     text-align: center;
 }
+
 .contact-details {
     background: #fff;
     border-radius: 12px;
@@ -393,14 +444,17 @@ header .logo {
     max-width: 600px;
     margin: 0 auto 30px;
 }
+
 .contact-details p {
     font-size: 1.1em;
     color: #3b2f2f;
     line-height: 1.6;
 }
+
 .contact-details strong {
     color: #6f4e37;
 }
+
 .reservation-form {
     background: #fff;
     border-radius: 12px;
@@ -409,6 +463,7 @@ header .logo {
     max-width: 600px;
     margin: 0 auto 30px;
 }
+
 .reservation-form label {
     display: block;
     font-family: 'Playfair Display', serif;
@@ -417,6 +472,7 @@ header .logo {
     margin-bottom: 5px;
     text-align: left;
 }
+
 .reservation-form input[type="text"],
 .reservation-form input[type="number"],
 .reservation-form input[type="date"],
@@ -429,6 +485,7 @@ header .logo {
     font-size: 1em;
     transition: border-color 0.3s;
 }
+
 .reservation-form input[type="text"]:focus,
 .reservation-form input[type="number"]:focus,
 .reservation-form input[type="date"]:focus,
@@ -436,10 +493,12 @@ header .logo {
     border-color: #6f4e37;
     outline: none;
 }
+
 .reservation-form textarea {
     resize: vertical;
     min-height: 100px;
 }
+
 .reservation-form input[type="submit"] {
     background: #6f4e37;
     color: #fff;
@@ -451,10 +510,12 @@ header .logo {
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
 }
+
 .reservation-form input[type="submit"]:hover {
     background: #d2691e;
     transform: translateY(-2px);
 }
+
 .map-placeholder {
     background: #e6e1de;
     border-radius: 12px;
@@ -462,6 +523,7 @@ header .logo {
     max-width: 600px;
     margin: 0 auto;
 }
+
 .map-placeholder p {
     font-size: 1em;
     color: #3b2f2f;
@@ -474,24 +536,29 @@ header .logo {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
+
 .gallery-item img {
     border-radius: 12px;
     transition: transform 0.3s;
 }
+
 .gallery-item img:hover {
     transform: scale(1.05);
 }
+
 .search-form {
     margin: 20px auto;
     max-width: 600px;
     text-align: center;
 }
+
 .search-form input[type="text"] {
     padding: 10px;
     width: 70%;
     border-radius: 8px;
     border: 1px solid #ccc;
 }
+
 .search-form input[type="submit"] {
     padding: 10px 20px;
     background: #6f4e37;
@@ -499,6 +566,7 @@ header .logo {
     border: none;
     border-radius: 8px;
 }
+
 .message {
     padding: 10px;
     margin: 10px auto;
@@ -506,10 +574,12 @@ header .logo {
     border-radius: 8px;
     text-align: center;
 }
+
 .message.success {
     background: #d4edda;
     color: #155724;
 }
+
 .message.error {
     background: #f8d7da;
     color: #721c24;
@@ -526,9 +596,11 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .footer-section {
     padding: 20px;
 }
+
 .footer-section h4 {
     font-family: 'Playfair Display', serif;
     font-size: 1.4em;
@@ -536,6 +608,7 @@ footer {
     margin-bottom: 15px;
     position: relative;
 }
+
 .footer-section h4::after {
     content: '';
     display: block;
@@ -544,19 +617,23 @@ footer {
     background: #d2691e;
     margin-top: 8px;
 }
+
 .footer-section p {
     font-size: 1em;
     line-height: 1.6;
     margin-bottom: 10px;
 }
+
 .footer-section a {
     color: #f8f5f2;
     text-decoration: none;
     transition: color 0.3s;
 }
+
 .footer-section a:hover {
     color: #d2691e;
 }
+
 .footer-icon {
     display: inline-block;
     width: 20px;
@@ -564,11 +641,13 @@ footer {
     margin-right: 8px;
     color: #d2691e;
 }
+
 .newsletter-form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 .newsletter-form input[type="email"] {
     padding: 12px;
     border: 1px solid #f8f5f2;
@@ -578,13 +657,16 @@ footer {
     color: #f8f5f2;
     transition: border-color 0.3s;
 }
+
 .newsletter-form input[type="email"]::placeholder {
     color: #b0a8a4;
 }
+
 .newsletter-form input[type="email"]:focus {
     border-color: #d2691e;
     outline: none;
 }
+
 .newsletter-form input[type="submit"] {
     background: #6f4e37;
     color: #f8f5f2;
@@ -596,6 +678,7 @@ footer {
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
 }
+
 .newsletter-form input[type="submit"]:hover {
     background: #d2691e;
     transform: translateY(-2px);
@@ -606,20 +689,25 @@ footer {
     main {
         padding: 0 20px;
     }
+
     footer {
         padding: 40px 20px;
         gap: 30px;
     }
+
     .footer-section {
         padding: 15px;
     }
+
     .newsletter-form input[type="email"],
     .newsletter-form input[type="submit"] {
         padding: 10px;
     }
+
     .hamburger {
         display: flex;
     }
+
     .nav-menu {
         display: none;
         width: 100%;
@@ -630,91 +718,116 @@ footer {
         padding: 20px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
+
     .nav-menu.active {
         display: block;
     }
+
     .nav-menu ul {
         flex-direction: column;
         gap: 15px;
         text-align: center;
     }
+
     .nav-menu a {
         display: block;
         padding: 15px;
         font-size: 1.2em;
     }
+
     header {
         padding: 10px 20px;
     }
+
     header .logo {
         width: 50px;
         height: 50px;
     }
+
     .header-extras {
         padding: 0 20px;
     }
+
     .preferences-form {
         padding: 15px;
     }
+
     .preference-popup {
         width: 200px;
         height: 200px;
     }
+
     .preference-popup p {
         font-size: 1.2em;
     }
+
     .menu {
         padding: 30px 0;
     }
+
     .menu-grid {
         gap: 20px;
     }
+
     .menu-item {
         padding: 15px;
     }
+
     .menu-image,
     .menu-image-placeholder {
         height: 180px;
     }
+
     .menu-content h4 {
         font-size: 1.4em;
     }
+
     .description {
         font-size: 0.95em;
     }
+
     .price {
         font-size: 1.2em;
     }
+
     .about {
         padding: 30px 0;
     }
+
     .about-grid {
         flex-direction: column;
         gap: 20px;
     }
+
     .about-card {
         flex-direction: column;
         max-width: 100%;
     }
+
     .about-image {
         width: 100%;
         height: 200px;
         border-radius: 12px 12px 0 0;
     }
+
     .about-content {
         padding: 15px;
     }
+
     .contact {
         padding: 30px 0;
     }
+
     .contact-details {
         padding: 15px;
         margin-bottom: 20px;
     }
+
     .reservation-form {
         padding: 20px;
         margin-bottom: 20px;
     }
+
     .reservation-form input[type="text"],
     .reservation-form input[type="number"],
     .reservation-form input[type="date"],
@@ -722,116 +835,150 @@ footer {
         padding: 10px;
         margin-bottom: 12px;
     }
+
     .reservation-form input[type="submit"] {
         padding: 10px 20px;
         font-size: 1em;
     }
+
     .map-placeholder {
         padding: 15px;
     }
 }
+
 @media (max-width: 480px) {
     main {
         padding: 0 15px;
     }
+
     footer {
         padding: 30px 15px;
         gap: 20px;
     }
+
     .footer-section h4 {
         font-size: 1.2em;
     }
+
     .footer-section p {
         font-size: 0.9em;
     }
+
     .newsletter-form input[type="email"],
     .newsletter-form input[type="submit"] {
         font-size: 0.9em;
     }
+
     .hero {
         height: 40vh;
     }
+
     .hero h1 {
         font-size: 1.8em;
     }
+
     .welcome {
         font-size: 1em;
         padding: 8px;
     }
+
     .preferences-form input[type="text"] {
         padding: 8px;
     }
+
     .preferences-form input[type="submit"] {
         padding: 10px 15px;
         font-size: 1em;
     }
+
     .preference-popup {
         width: 180px;
         height: 180px;
     }
+
     .preference-popup p {
         font-size: 1.1em;
     }
+
     .menu {
         padding: 20px 0;
     }
+
     .menu-grid {
         gap: 15px;
     }
+
     .menu-item {
         padding: 12px;
     }
+
     .menu-image,
     .menu-image-placeholder {
         height: 160px;
     }
+
     .menu-content h4 {
         font-size: 1.3em;
     }
+
     .description {
         font-size: 0.9em;
     }
+
     .price {
         font-size: 1.1em;
     }
+
     .about {
         padding: 20px 0;
     }
+
     .about-grid {
         gap: 15px;
     }
+
     .about-card {
         max-width: 100%;
     }
+
     .about-image {
         height: 160px;
     }
+
     .about-content {
         padding: 12px;
     }
+
     .about-content h3 {
         font-size: 1.5em;
     }
+
     .about-content p {
         font-size: 0.95em;
     }
+
     .contact {
         padding: 20px 0;
     }
+
     .contact-details {
         padding: 12px;
         margin-bottom: 15px;
     }
+
     .contact-details p {
         font-size: 1em;
     }
+
     .reservation-form {
         padding: 15px;
         margin-bottom: 15px;
     }
+
     .reservation-form label {
         font-size: 0.95em;
     }
+
     .reservation-form input[type="text"],
     .reservation-form input[type="number"],
     .reservation-form input[type="date"],
@@ -840,13 +987,16 @@ footer {
         margin-bottom: 10px;
         font-size: 0.95em;
     }
+
     .reservation-form input[type="submit"] {
         padding: 8px 15px;
         font-size: 0.95em;
     }
+
     .map-placeholder {
         padding: 12px;
     }
+
     .map-placeholder p {
         font-size: 0.95em;
     }

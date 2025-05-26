@@ -20,7 +20,7 @@
         <input type="submit" value="Book Your Table">
     </form>
     <div class="map-placeholder">
-        <p>Visit us at 123 Coffee Lane, Brewtown<br>[Interactive Map Placeholder]</p>
+        <p>Visit us at 123 Coffee Lane, Brewtown</p>
     </div>
 </section>
 
