@@ -4,18 +4,15 @@
     margin: 0;
     padding: 0;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.8;
     background: #f8f5f2;
     color: #3b2f2f;
 }
-
 img {
     max-width: 100%;
     height: auto;
@@ -23,36 +20,29 @@ img {
 }
 
 /* Typography */
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     font-family: 'Playfair Display', serif;
     color: #6f4e37;
     letter-spacing: 1px;
 }
-
 h1 {
     font-size: 3em;
     font-weight: 700;
 }
-
 h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
     text-align: center;
 }
-
 h3 {
     font-size: 1.8em;
     margin: 30px 0 20px;
 }
-
 h4 {
-    font-size: 1.3em;
-    margin: 10px 0;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
-
 p {
     margin-bottom: 20px;
     font-size: 1.1em;
@@ -79,11 +69,9 @@ main {
     margin: 0;
     padding: 0;
 }
-
 .hero h1 {
     color: #f8f5f2;
 }
-
 .hero .cta-button {
     background: #6f4e37;
     color: #fff;
@@ -93,7 +81,6 @@ main {
     font-family: 'Playfair Display', serif;
     transition: background 0.3s, transform 0.2s;
 }
-
 .hero .cta-button:hover {
     background: #d2691e;
     transform: translateY(-3px);
@@ -112,18 +99,15 @@ header {
     justify-content: space-between;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 header .logo {
     width: 60px;
     height: 60px;
 }
-
 .nav-menu ul {
     list-style: none;
     display: flex;
     gap: 25px;
 }
-
 .nav-menu a {
     color: #f8f5f2;
     text-decoration: none;
@@ -134,7 +118,6 @@ header .logo {
     border-radius: 4px;
     transition: background 0.3s, transform 0.2s;
 }
-
 .nav-menu a:hover,
 .nav-menu a.active {
     background: #d2691e;
@@ -153,7 +136,6 @@ header .logo {
     cursor: pointer;
     padding: 0;
 }
-
 .hamburger span {
     width: 100%;
     height: 3px;
@@ -161,15 +143,12 @@ header .logo {
     border-radius: 2px;
     transition: all 0.3s ease;
 }
-
 .hamburger.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
-
 .hamburger.active span:nth-child(2) {
     opacity: 0;
 }
-
 .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -7px);
 }
@@ -181,7 +160,6 @@ header .logo {
     padding: 0 40px;
     text-align: center;
 }
-
 .welcome {
     font-family: 'Playfair Display', serif;
     font-size: 1.2em;
@@ -191,7 +169,6 @@ header .logo {
     border-radius: 8px;
     display: inline-block;
 }
-
 .preferences-form {
     background: #fff;
     padding: 20px;
@@ -201,7 +178,6 @@ header .logo {
     max-width: 500px;
     width: 100%;
 }
-
 .preferences-form label {
     display: block;
     font-family: 'Playfair Display', serif;
@@ -209,7 +185,6 @@ header .logo {
     margin-bottom: 5px;
     font-size: 1.1em;
 }
-
 .preferences-form input[type="text"] {
     width: 100%;
     padding: 10px;
@@ -219,12 +194,10 @@ header .logo {
     font-size: 1em;
     transition: border-color 0.3s;
 }
-
 .preferences-form input[type="text"]:focus {
     border-color: #6f4e37;
     outline: none;
 }
-
 .preferences-form input[type="submit"] {
     background: #6f4e37;
     color: #fff;
@@ -236,7 +209,6 @@ header .logo {
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
 }
-
 .preferences-form input[type="submit"]:hover {
     background: #d2691e;
     transform: translateY(-2px);
@@ -250,7 +222,7 @@ header .logo {
     transform: translate(-50%, -50%);
     background: #f8f5f2;
     border: 5px solid #6f4e37;
-    border-radius: 10px;
+    border-radius: 50%;
     width: 250px;
     height: 250px;
     display: flex;
@@ -261,13 +233,11 @@ header .logo {
     z-index: 1000;
     padding: 20px;
 }
-
 .preference-popup p {
     font-family: 'Playfair Display', serif;
     font-size: 1.4em;
     margin: 0;
 }
-
 .popup-close {
     position: absolute;
     top: 10px;
@@ -286,32 +256,83 @@ header .logo {
     justify-content: center;
     transition: background 0.3s;
 }
-
 .popup-close:hover {
     background: #d2691e;
     color: #f8f5f2;
 }
 
-/* Other Sections */
+/* Menu Styles */
+.menu {
+    padding: 40px 0;
+}
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px;
+    gap: 30px;
 }
-
 .menu-item {
-    text-align: center;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    border-radius: 12px;
-    background: #f8f5f2;
-    transition: transform 0.3s;
 }
-
 .menu-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+.menu-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+.menu-image-placeholder {
+    width: 100%;
+    height: 220px;
+    background: #e6e1de;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    color: #6f4e37;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1em;
+    text-align: center;
+}
+.menu-content {
+    text-align: center;
+    width: 100%;
+}
+.menu-content h4 {
+    color: #6f4e37;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+.menu-item:hover .menu-content h4 {
+    color: #d2691e;
+}
+.description {
+    font-size: 1em;
+    color: #3b2f2f;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+.price {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #d2691e;
+    margin: 0;
 }
 
+/* Other Sections */
 .contact form {
     max-width: 700px;
     margin: 0 auto;
@@ -319,7 +340,6 @@ header .logo {
     padding: 30px;
     border-radius: 12px;
 }
-
 .contact form input,
 .contact form textarea {
     width: 100%;
@@ -328,7 +348,6 @@ header .logo {
     border: 1px solid #ccc;
     border-radius: 8px;
 }
-
 .contact form input[type="submit"] {
     background: #6f4e37;
     color: #fff;
@@ -336,35 +355,29 @@ header .logo {
     padding: 16px 30px;
     cursor: pointer;
 }
-
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
-
 .gallery-item img {
     border-radius: 12px;
     transition: transform 0.3s;
 }
-
 .gallery-item img:hover {
     transform: scale(1.05);
 }
-
 .search-form {
     margin: 20px auto;
     max-width: 600px;
     text-align: center;
 }
-
 .search-form input[type="text"] {
     padding: 10px;
     width: 70%;
     border-radius: 8px;
     border: 1px solid #ccc;
 }
-
 .search-form input[type="submit"] {
     padding: 10px 20px;
     background: #6f4e37;
@@ -372,7 +385,6 @@ header .logo {
     border: none;
     border-radius: 8px;
 }
-
 .message {
     padding: 10px;
     margin: 10px auto;
@@ -380,12 +392,10 @@ header .logo {
     border-radius: 8px;
     text-align: center;
 }
-
 .message.success {
     background: #d4edda;
     color: #155724;
 }
-
 .message.error {
     background: #f8d7da;
     color: #721c24;
@@ -402,11 +412,9 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .footer-section {
     padding: 20px;
 }
-
 .footer-section h4 {
     font-family: 'Playfair Display', serif;
     font-size: 1.4em;
@@ -414,7 +422,6 @@ footer {
     margin-bottom: 15px;
     position: relative;
 }
-
 .footer-section h4::after {
     content: '';
     display: block;
@@ -423,23 +430,19 @@ footer {
     background: #d2691e;
     margin-top: 8px;
 }
-
 .footer-section p {
     font-size: 1em;
     line-height: 1.6;
     margin-bottom: 10px;
 }
-
 .footer-section a {
     color: #f8f5f2;
     text-decoration: none;
     transition: color 0.3s;
 }
-
 .footer-section a:hover {
     color: #d2691e;
 }
-
 .footer-icon {
     display: inline-block;
     width: 20px;
@@ -447,13 +450,11 @@ footer {
     margin-right: 8px;
     color: #d2691e;
 }
-
 .newsletter-form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
 .newsletter-form input[type="email"] {
     padding: 12px;
     border: 1px solid #f8f5f2;
@@ -463,16 +464,13 @@ footer {
     color: #f8f5f2;
     transition: border-color 0.3s;
 }
-
 .newsletter-form input[type="email"]::placeholder {
     color: #b0a8a4;
 }
-
 .newsletter-form input[type="email"]:focus {
     border-color: #d2691e;
     outline: none;
 }
-
 .newsletter-form input[type="submit"] {
     background: #6f4e37;
     color: #f8f5f2;
@@ -484,7 +482,6 @@ footer {
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
 }
-
 .newsletter-form input[type="submit"]:hover {
     background: #d2691e;
     transform: translateY(-2px);
@@ -495,25 +492,20 @@ footer {
     main {
         padding: 0 20px;
     }
-
     footer {
         padding: 40px 20px;
         gap: 30px;
     }
-
     .footer-section {
         padding: 15px;
     }
-
     .newsletter-form input[type="email"],
     .newsletter-form input[type="submit"] {
         padding: 10px;
     }
-
     .hamburger {
         display: flex;
     }
-
     .nav-menu {
         display: none;
         width: 100%;
@@ -524,101 +516,124 @@ footer {
         padding: 20px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
-
     .nav-menu.active {
         display: block;
     }
-
     .nav-menu ul {
         flex-direction: column;
         gap: 15px;
         text-align: center;
     }
-
     .nav-menu a {
         display: block;
         padding: 15px;
         font-size: 1.2em;
     }
-
     header {
         padding: 10px 20px;
     }
-
     header .logo {
         width: 50px;
         height: 50px;
     }
-
     .header-extras {
         padding: 0 20px;
     }
-
     .preferences-form {
         padding: 15px;
     }
-
     .preference-popup {
         width: 200px;
         height: 200px;
     }
-
     .preference-popup p {
         font-size: 1.2em;
     }
+    .menu {
+        padding: 30px 0;
+    }
+    .menu-grid {
+        gap: 20px;
+    }
+    .menu-item {
+        padding: 15px;
+    }
+    .menu-image,
+    .menu-image-placeholder {
+        height: 180px;
+    }
+    .menu-content h4 {
+        font-size: 1.4em;
+    }
+    .description {
+        font-size: 0.95em;
+    }
+    .price {
+        font-size: 1.2em;
+    }
 }
-
 @media (max-width: 480px) {
     main {
         padding: 0 15px;
     }
-
     footer {
         padding: 30px 15px;
         gap: 20px;
     }
-
     .footer-section h4 {
         font-size: 1.2em;
     }
-
     .footer-section p {
         font-size: 0.9em;
     }
-
     .newsletter-form input[type="email"],
     .newsletter-form input[type="submit"] {
         font-size: 0.9em;
     }
-
     .hero {
         height: 40vh;
     }
-
     .hero h1 {
         font-size: 1.8em;
     }
-
     .welcome {
         font-size: 1em;
         padding: 8px;
     }
-
     .preferences-form input[type="text"] {
         padding: 8px;
     }
-
     .preferences-form input[type="submit"] {
         padding: 10px 15px;
         font-size: 1em;
     }
-
     .preference-popup {
         width: 180px;
         height: 180px;
     }
-
     .preference-popup p {
+        font-size: 1.1em;
+    }
+    .menu {
+        padding: 20px 0;
+    }
+    .menu-grid {
+        gap: 15px;
+    }
+    .menu-item {
+        padding: 12px;
+    }
+    .menu-image,
+    .menu-image-placeholder {
+        height: 160px;
+    }
+    .menu-content h4 {
+        font-size: 1.3em;
+    }
+    .description {
+        font-size: 0.9em;
+    }
+    .price {
         font-size: 1.1em;
     }
 }
