@@ -14,9 +14,11 @@ require_once 'includes/functions.php';
 <body>
     <?php include 'includes/hero.php'; ?>
     <?php include 'includes/header.php'; ?>
-    <?php include 'includes/about.php'; ?>
-    <?php include 'includes/menu.php'; ?>
-    <?php include 'includes/contact.php'; ?>
+    <main>
+        <?php include 'includes/about.php'; ?>
+        <?php include 'includes/menu.php'; ?>
+        <?php include 'includes/contact.php'; ?>
+    </main>
     <?php include 'includes/footer.php'; ?>
     <script src="js/script.js"></script>
 </body>

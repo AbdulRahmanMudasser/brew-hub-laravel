@@ -1,5 +1,10 @@
+<?php
+require_once 'includes/config.php';
+require_once 'includes/functions.php';
+?>
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Bean & Brew - Contact Us</title>
@@ -7,10 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <?php include 'includes/hero.php'; ?>
     <?php include 'includes/header.php'; ?>
-    <?php include 'includes/contact.php'; ?>
+    <main>
+        <?php include 'includes/contact.php'; ?>
+    </main>
     <?php include 'includes/footer.php'; ?>
 </body>
+
 </html>

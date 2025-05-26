@@ -1,3 +1,7 @@
+<?php
+require_once 'includes/config.php';
+require_once 'includes/functions.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +14,7 @@
 <body>
     <?php include 'includes/hero.php'; ?>
     <?php include 'includes/header.php'; ?>
-    <?php include 'includes/menu.php'; ?>
+<main>    <?php include 'includes/menu.php'; ?></main>
     <?php include 'includes/footer.php'; ?>
 </body>
 </html>
