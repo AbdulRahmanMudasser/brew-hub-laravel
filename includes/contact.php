@@ -1,10 +1,9 @@
 <section class="contact">
-    <h2>Contact Us</h2>
+    <h2>Opening Hours</h2>
     <div class="contact-details">
-        <p><strong>Address:</strong> 123 Coffee Lane, Brewtown</p>
-        <p><strong>Opening Hours:</strong><br>
-            Monday - Friday: 7:00 AM - 10:00 PM<br>
-            Saturday - Sunday: 10:00 AM - 8:00 PM
+        <p><br>
+            <b>Monday</b> - <b>Friday</b>: 7:00 AM - 10:00 PM<br>
+            <b>Saturday</b> - <b>Sunday</b>: 10:00 AM - 8:00 PM
         </p>
     </div>
     <h3>Reserve a Table</h3>
@@ -20,6 +19,6 @@
         <input type="submit" value="Book Your Table">
     </form>
     <div class="map-placeholder">
-        <p>Visit us at 123 Coffee Lane, Brewtown<br>[Interactive Map Placeholder]</p>
+        <p>Visit us at 123 Coffee Lane, Brewtown</p>
     </div>
 </section>
