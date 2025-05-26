@@ -47,10 +47,7 @@ $gallery_count = $stmt->fetch()['count'];
         </aside>
         <main class="admin-content">
             <header class="admin-header">
-                <h1>Admin Dashboard</h1>
-                <div class="admin-user">
-                    <span>Welcome, <?php echo htmlspecialchars($admin_name); ?></span>
-                </div>
+                <h1 style="margin: auto;">Admin Dashboard</h1>
             </header>
             <?php display_message(); ?>
             <section class="dashboard-section">
