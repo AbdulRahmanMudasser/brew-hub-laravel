@@ -18,7 +18,7 @@ $menu_items = $stmt->fetchAll();
                 <div class="menu-content">
                     <h4><?php echo htmlspecialchars($item['name']); ?></h4>
                     <p class="description"><?php echo htmlspecialchars($item['description']); ?></p>
-                    <p class="price">Rs. <?php echo number_format($item['price'], 2); ?></p>
+                    <p class="price">Rs. <?php echo number_format($item['price']); ?></p>
                 </div>
             </div>
         <?php endforeach; ?>
