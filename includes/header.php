@@ -15,6 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['set_preferences'])) {
             setcookie('favorite_color', $favorite_color, time() + (30 * 24 * 60 * 60), '/');
             $_SESSION['message'] = "Preferences saved!";
             $_SESSION['message_type'] = 'success';
+            $_SESSION['show_popup'] = true; // Trigger popup
         } else {
             $_SESSION['message'] = "Invalid color format. Use hex (#RRGGBB) or color name.";
             $_SESSION['message_type'] = 'error';
@@ -48,11 +49,11 @@ $favorite_color = $_COOKIE['favorite_color'] ?? '';
     </nav>
 </header>
 <div class="header-extras">
-    <?php if ($full_name): ?>
+    <!-- <?php if ($full_name): ?>
         <div class="welcome" style="color: <?php echo htmlspecialchars($favorite_color); ?>;">
             Welcome, <?php echo htmlspecialchars($full_name); ?>!
         </div>
-    <?php endif; ?>
+    <?php endif; ?> -->
     <form method="POST" class="preferences-form">
         <input type="hidden" name="set_preferences" value="1">
         <label for="full_name">Full Name</label>
@@ -63,3 +64,12 @@ $favorite_color = $_COOKIE['favorite_color'] ?? '';
     </form>
     <?php display_message(); ?>
 </div>
+<?php if (isset($_SESSION['show_popup']) && $full_name && $favorite_color): ?>
+    <div class="preference-popup">
+        <button class="popup-close" aria-label="Close popup">✕</button>
+        <p style="color: <?php echo htmlspecialchars($favorite_color); ?>;">
+            Hello, <?php echo htmlspecialchars($full_name); ?>!
+        </p>
+    </div>
+    <?php unset($_SESSION['show_popup']); // Clear popup trigger ?>
+<?php endif; ?>
