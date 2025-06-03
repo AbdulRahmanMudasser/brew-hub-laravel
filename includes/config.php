@@ -1,12 +1,12 @@
 <?php
-// Database configuration for InfinityFree
-define('DB_HOST', 'localhost'); // Replace with InfinityFree DB host
+// Database configuration for hosting
+define('DB_HOST', 'localhost'); // Replace with DB host
 define('DB_USER', 'root');     // Replace with your DB username
 define('DB_PASS', '');         // Replace with your DB password
 define('DB_NAME', 'bean_brew'); // Replace with your DB name
 
 // Site configuration
-define('SITE_URL', 'http://your-username.infinityfreeapp.com/'); // Replace with your domain
+define('SITE_URL', 'http://brew-and-bean.rf.gd/'); // Replace with your domain
 define('UPLOAD_DIR', 'uploads/gallery/');
 define('UPLOAD_PATH', __DIR__ . '/../' . UPLOAD_DIR);
 define('SESSION_TIMEOUT', 1800); // 30 minutes
